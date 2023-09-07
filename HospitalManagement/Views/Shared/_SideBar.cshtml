@@ -1,0 +1,40 @@
+﻿@using Microsoft.AspNetCore.Identity
+@using HospitalManagement.Areas.Identity.Data
+
+@inject SignInManager<HospitalAdminUser> SignInManager
+@inject UserManager<HospitalAdminUser> UserManager
+
+<style>
+        /* Add some basic styling for the sidebar */
+        .sidebar {
+            height: 100%;
+            width: 250px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            background-color: #333;
+            padding-top: 20px;
+        }
+
+        /* Style the links inside the sidebar */
+        .sidebar a {
+            padding: 15px;
+            text-decoration: none;
+            font-size: 18px;
+            color: white;
+            display: block;
+        }
+
+        /* Change the color of the links on hover */
+        .sidebar a:hover {
+            background-color: #555;
+        }
+</style>
+
+<div class="sidebar">
+    <a asp-controller="Employees" asp-action="Index">Employee Management</a>
+    <a asp-controller="Patients" asp-action="Index">Patient Management</a>
+    <a asp-controller="Billings" asp-action="Index">Bills</a>
+    <a asp-controller="Capacities" asp-action="Index">Capacity</a>
+
+</div>
