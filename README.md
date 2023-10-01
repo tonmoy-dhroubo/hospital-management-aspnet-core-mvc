@@ -1,4 +1,6 @@
 # HospitalManagement
+## [Live Preview](http://viserion216-001-site1.gtempurl.com/)
+
 ## Screenshots
 
 1. [![Screenshot-0](https://i.ibb.co/8K0fpNL/Screenshot-0.png)](https://ibb.co/SsPM854)
